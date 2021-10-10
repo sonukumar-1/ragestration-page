@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aqua;
+                background-size: cover;
+                
+                
+            }
+            .box{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                width: 500px;
+                height: 600px;
+                background: rgba(0,0,0,0.5);
+                box-shadow:0px 4px 16px rgb(0,0,0,0.5);
+
+            }
+            input[type="text"]{
+                width: 200px;
+                height: 50px;
+                border: 30px;
+                color:black;
+                background-color: whitesmoke;
+            }
+            input[type="password"]
+            {
+                width: 200px;
+                height: 50px;
+                border: 30px;
+                color:black;
+                background-color:whitesmoke;
+            }
+           
+            
+        </style>
+    </head>
+    <body>
+       <!------ <button>
+            <a href="C:\Users\DELL\Bluetooth\Desktop\javas2\th.jfif" download="html" title="click here for download" > download </a>
+        </button>--->
+        <div class="box">
+         <marquee><center><h1 style="color:red;">Registration</h1></center></marquee> 
+         <center> <form action="/action_page.php">
+            <label for="username"> NAME:</label><br><br>
+              <input type="text" id ="name" maxlength="20" placeholder="Enter your Name" required>
+              <br><br>
+              <label for="password"> password:</label><br><br>
+              <input type="password" id="password" maxlength="10" placeholder="Please Enter your Password" required>
+              <br><br>
+              <label for="confirm password">confirm password:</label><br><br>
+              <input type="password" id ="confirm password" maxlength="10"  placeholder="Please Enter Confirm Password" required><br><br><br>
+              <input type="checkbox"> yes to agree
+              <br><br><BR>
+                <script>
+                    function hii(){
+                        alert("successful ragister");
+                    }
+                </script>
+              <button onclick="hii()">SUMBIT</button>
+          </form></center>
+        </div>
+    </body>
+</html>
